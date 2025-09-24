@@ -2,7 +2,7 @@ import axios from "axios"
 const geminiResponse=async (command,assistantName,userName)=>{
 try {
     const apiUrl=process.env.GEMINI_API_URL
-   const prompt = 
+    const prompt = 
 `You are a voice-enabled virtual assistant named ${assistantName}, created by ${userName}.
 Do not behave like Google. Understand the user's natural language input and respond ONLY with a JSON object:
 

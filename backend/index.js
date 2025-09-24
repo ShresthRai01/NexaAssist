@@ -8,7 +8,6 @@ import cookieParser from "cookie-parser"
 import userRouter from "./routes/user.routes.js"
 import geminiResponse from "./gemini.js"
 
-
 const app=express()
 app.use(cors({
     origin:"http://localhost:5173",
@@ -19,7 +18,6 @@ app.use(express.json())
 app.use(cookieParser())
 app.use("/api/auth",authRouter)
 app.use("/api/user",userRouter)
-
 
 app.listen(port,()=>{
     connectDb()
